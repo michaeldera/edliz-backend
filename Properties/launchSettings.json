@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "edliz_backend": {
+    "Edliz": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",
