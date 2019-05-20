@@ -4,12 +4,15 @@ using System.Linq;
 
 namespace Edliz.Models
 {
-    class Chapter
+    class Article
     {
-        public string Title { get; set; }
-        public int Number { get; set; }
-        public string Content { get; set; }
-           
+        public string ArticleBody { get; set; }
+        public string ArticleSection { get; set; }
+        public string BackStory {get; set; }
+        public int WordCount { get; set; }
+        public string AlternativeHeadline { get; set; }
+        public string Headline {get; set;} 
+        public string[] KeyWords {get; set;}
     }
     
 }
