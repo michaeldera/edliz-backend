@@ -6,7 +6,8 @@ project.lock.json
 
 # Visual Studio Code
 .vscode
-
+# Intellij
+.idea
 # User-specific files
 *.suo
 *.user
