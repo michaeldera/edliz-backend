@@ -7,7 +7,7 @@ The guidelines are meant to be a pocketbook for every medical health professiona
 ## Quick Start
 1. Run `dotnet restore`
 1. Run `dotnet build`
-
+1. Run `dotnet run`
 
 ## Contributors and Backers
 
@@ -22,3 +22,4 @@ If you contribute to this  project please add your name on this list along with 
 
 1. Dr. Tafadzwa Liberty Nyeve
 1. Michael Dera
+1. [Sabelo Ndebele](https://github.com/sabelo-n)
