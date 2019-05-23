@@ -52,6 +52,14 @@
               "target": "Package",
               "version": "[2.1.2, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.1.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.11, )"
+            },
             "Microsoft.NETCore.App": {
               "target": "Package",
               "version": "[2.1.0, )",
