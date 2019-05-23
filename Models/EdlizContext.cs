@@ -4,7 +4,7 @@ using Edliz.Models;
 
 namespace Edliz
 {
-    public class EldizContext : DbContext
+    public class EdlizContext : DbContext
     {
         public DbSet<Article> Articles {get; set;}
     }
