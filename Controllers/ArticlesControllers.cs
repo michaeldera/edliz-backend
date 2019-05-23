@@ -12,31 +12,32 @@ namespace Edliz.Controllers
 
     public class ArticlesController : ControllerBase
     {
-        //Gets All chapters
+        //GET api/articles/: Get all chapters
         [HttpGet]
-        public ActionResult<ICollection<string>> Get(){
-            return new string[]{ "One", "two"}; 
+        public ActionResult<ICollection<Article>> Get(){
+            return new Article[]{ new Article(), new Article()}; 
         }
         
+        // GET api/articles/{id}: Get a specific chapter by Id 
         [HttpGet("{id}")]
         public ActionResult<Article> Get(int id)
         {
             return new Article();
         }
 
-        // POST api/values
+        // POST api/articles : create a new Article
         [HttpPost]
         public void Post([FromBody] Article value)
         {
         }
 
-        // PUT api/values/5
+        // PUT api/articles/{id}: Edit an article
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] Article value)
         {
         }
 
-        // DELETE api/values/5
+        // DELETE api/articles/{id} : delete an article
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
