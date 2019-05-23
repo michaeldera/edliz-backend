@@ -7,15 +7,15 @@ using Edliz.Models;
 
 namespace Edliz.Controllers
 {
-    [Route("/[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
 
-    class ArticlesController : ControllerBase
+    public class ArticlesController : ControllerBase
     {
         //Gets All chapters
         [HttpGet]
-        public ActionResult<ICollection<Article>> Get(){
-            return new Article[]{ new Article(), new Article()}; 
+        public ActionResult<ICollection<string>> Get(){
+            return new string[]{ "One", "two"}; 
         }
         
         [HttpGet("{id}")]
