@@ -18,7 +18,7 @@ namespace Edliz.Controllers
                 _context = context;
             }
             
-            public async Task<IActionResult> Index(string searchQuery){
+            public Task<IActionResult> Index(string searchQuery){
 
                 throw new NotImplementedException();
             } 
