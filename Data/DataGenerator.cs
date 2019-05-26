@@ -24,8 +24,8 @@ namespace Edliz
                 
                 //Data will be instantiated here
                 context.AddRange(
-                    new Article(),
-                    new Article()
+                    new Article(){ Id = 1, ArticleBody="Body", AlternativeHeadline="Headline 1", ArticleSection="Section 1" },
+                    new Article() { Id = 2, ArticleBody = "Body", AlternativeHeadline = "Headline 2", ArticleSection = "Section 2" }
                 );
 
                 context.SaveChanges();
