@@ -12,12 +12,21 @@ namespace Edliz.Controllers
 
     public class ArticlesController : ControllerBase
     {
-        //GET api/articles/: Get all chapters
-        [HttpGet]
-        public ActionResult<ICollection<Article>> Get(){
-            return new Article[]{ new Article(), new Article()}; 
+
+        private readonly EdlizContext _context;
+
+        public ArticlesController(EdlizContext context)
+        {
+            _context = context;
         }
         
+        //GET api/articles/: Get all chapters
+        [HttpGet]
+        public ActionResult<ICollection<Article>> Get()
+        {
+            return new Article[] { new Article(), new Article() };
+        }
+
         // GET api/articles/{id}: Get a specific chapter by Id 
         [HttpGet("{id}")]
         public ActionResult<Article> Get(int id)
@@ -43,5 +52,5 @@ namespace Edliz.Controllers
         {
         }
     }
-    
+
 }

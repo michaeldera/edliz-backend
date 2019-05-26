@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Edliz.Models
 {
@@ -11,6 +12,7 @@ namespace Edliz.Models
         public string ArticleSection { get; set; }
         public string AlternativeHeadline { get; set; }
         public string Headline {get; set;} 
+        [NotMapped]
         public string[] KeyWords {get; set;}
     }
     
