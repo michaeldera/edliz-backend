@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using System.IO;
 
 namespace Edliz
 {
@@ -17,17 +18,15 @@ namespace Edliz
                 )
             )
             {
-                //Check if data is already seeded here
-                if(context.Articles.Any()){
-                    return;
-                }
                 
-                //Data will be instantiated here
-                context.AddRange(
-                    new Article(){ Id = 1, ArticleBody="Body", AlternativeHeadline="Headline 1", ArticleSection="Section 1" },
-                    new Article() { Id = 2, ArticleBody = "Body", AlternativeHeadline = "Headline 2", ArticleSection = "Section 2" }
-                );
-
+                for(var i = 1;  i< 37; i++){
+                    Console.WriteLine("setting up " + i);
+                    string fileName = "chapter_" + i + ".js";
+                    string path = "resources/pages/";
+                    string content = File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory,path + fileName));
+                    Article tmpArticle = new Article(){Id = i, ArticleBody = content};
+                    context.Add(tmpArticle);
+                }
                 context.SaveChanges();
             }
         }

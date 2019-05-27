@@ -15,4 +15,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.11" />
   </ItemGroup>
 
+  <ItemGroup> 
+  <Content Include="resources\**"> 
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory> 
+  </Content> 
+</ItemGroup>
+
 </Project>
