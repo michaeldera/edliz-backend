@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\micha\\source\\repos\\edliz-backend\\edliz-backend.csproj": {}
+    "c:\\Users\\micha\\source\\repos\\edliz-backend\\edliz-backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\micha\\source\\repos\\edliz-backend\\edliz-backend.csproj": {
+    "c:\\Users\\micha\\source\\repos\\edliz-backend\\edliz-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\micha\\source\\repos\\edliz-backend\\edliz-backend.csproj",
+        "projectUniqueName": "c:\\Users\\micha\\source\\repos\\edliz-backend\\edliz-backend.csproj",
         "projectName": "edliz-backend",
-        "projectPath": "C:\\Users\\micha\\source\\repos\\edliz-backend\\edliz-backend.csproj",
+        "projectPath": "c:\\Users\\micha\\source\\repos\\edliz-backend\\edliz-backend.csproj",
         "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\micha\\source\\repos\\edliz-backend\\obj\\",
+        "outputPath": "c:\\Users\\micha\\source\\repos\\edliz-backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
