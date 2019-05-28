@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "Elasticsearch.Net/6.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Elasticsearch.Net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Elasticsearch.Net.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -2601,6 +2610,18 @@
           }
         }
       },
+      "NEST/6.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Elasticsearch.Net": "[6.7.0, 7.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/Nest.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nest.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -4337,6 +4358,22 @@
     }
   },
   "libraries": {
+    "Elasticsearch.Net/6.7.0": {
+      "sha512": "03V7sjGKXuJBYmM8uZI794TbbMVOsG3gkViRTHEgXemC9O+GzUCgoEL0G8TIXvFFxJbzdayki6XC5y3oy1QdPw==",
+      "type": "package",
+      "path": "elasticsearch.net/6.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "elasticsearch.net.6.7.0.nupkg.sha512",
+        "elasticsearch.net.nuspec",
+        "lib/net461/Elasticsearch.Net.dll",
+        "lib/net461/Elasticsearch.Net.xml",
+        "lib/netstandard2.0/Elasticsearch.Net.dll",
+        "lib/netstandard2.0/Elasticsearch.Net.xml",
+        "license.txt"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "owAlEIUZXWSnkK8Z1c+zR47A0X6ykF4XjbPok4lQKNuciUfHLGPd6QnI+rt/8KlQ17PmF+I4S3f+m+Qe4IvViw==",
       "type": "package",
@@ -6940,6 +6977,22 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "NEST/6.7.0": {
+      "sha512": "qZNwhCYTyB/my8GoFPAOVXZqmP/Kqi/T4W7ygtCvKWn0btw7rK3YjzOponljRKRkt5f/Y/Bha1BfAfUPb9EU7w==",
+      "type": "package",
+      "path": "nest/6.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Nest.dll",
+        "lib/net461/Nest.xml",
+        "lib/netstandard2.0/Nest.dll",
+        "lib/netstandard2.0/Nest.xml",
+        "license.txt",
+        "nest.6.7.0.nupkg.sha512",
+        "nest.nuspec"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -11793,7 +11846,8 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.EntityFrameworkCore.Design >= 2.1.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.11",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "NEST"
     ]
   },
   "packageFolders": {
@@ -11803,11 +11857,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\micha\\source\\repos\\edliz-backend\\edliz-backend.csproj",
+      "projectUniqueName": "C:\\Users\\micha\\source\\repos\\edliz-backend\\edliz-backend.csproj",
       "projectName": "edliz-backend",
-      "projectPath": "c:\\Users\\micha\\source\\repos\\edliz-backend\\edliz-backend.csproj",
+      "projectPath": "C:\\Users\\micha\\source\\repos\\edliz-backend\\edliz-backend.csproj",
       "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\micha\\source\\repos\\edliz-backend\\obj\\",
+      "outputPath": "C:\\Users\\micha\\source\\repos\\edliz-backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -11860,6 +11914,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "NEST": {
+            "target": "Package",
+            "version": "(, )"
           }
         },
         "imports": [
