@@ -67,7 +67,7 @@
             },
             "NEST": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[6.7.0, )"
             }
           },
           "imports": [

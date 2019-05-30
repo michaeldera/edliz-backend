@@ -11847,7 +11847,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 2.1.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.11",
       "Microsoft.NETCore.App >= 2.1.0",
-      "NEST"
+      "NEST >= 6.7.0"
     ]
   },
   "packageFolders": {
@@ -11917,7 +11917,7 @@
           },
           "NEST": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[6.7.0, )"
           }
         },
         "imports": [
