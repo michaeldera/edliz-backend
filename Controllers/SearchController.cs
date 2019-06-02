@@ -13,25 +13,23 @@ namespace Edliz.Controllers
   [ApiController]
   public class SearchController : ControllerBase
   {
-    private readonly EdlizContext _context;
-    private readonly ElasticClient _client;
+    private readonly IElasticClient _elasticClient;
 
-    public SearchController(EdlizContext context)
+    public SearchController(IElasticClient elasticClient)
     {
+      _elasticClient = elasticClient;
     }
     [HttpGet]
-    public ActionResult<ICollection<Article>> Get(string q)
+    public Task<ActionResult<IEnumerable<Article>>> Get(string q)
     {
-      var searchResponse = _client.Search<Article>(a => a
+       var results = _elasticClient.Search<Article>(a => a
        .Query(_q => _q
         .Match(m => m
           .Field(f => f.ArticleBody)
           .Query(q)
           )
-     ));
-
-      var results = searchResponse.Documents.ToList();
-      return results;
+      ));
+      return (IEnumerable<Article>)results.Documents;
     }
   }
 }

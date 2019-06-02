@@ -29,12 +29,8 @@ namespace Edliz
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddSingleton<IElasticClient>(
-        new ElasticClient(
-          new ConnectionSettings( new Uri("http://localhost:9200/"))
-            .DefaultIndex("eldiz")
-            .DefaultMappingFor<Article>( m => m
-              .PropertyName(a => a.Id, "id")
-            )
+        new ElasticClient(new ConnectionSettings( new Uri("http://localhost:9200/"))
+            .DefaultIndex("articles")
       ));
       services.AddDbContext<EdlizContext>(options => options.UseInMemoryDatabase(databaseName: "Edliz"));
       services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

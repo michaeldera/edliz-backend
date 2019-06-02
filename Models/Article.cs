@@ -12,8 +12,8 @@ namespace Edliz.Models
         public string ArticleSection { get; set; }
         public string AlternativeHeadline { get; set; }
         public string Headline {get; set;} 
-        [NotMapped]
-        public string[] KeyWords {get; set;}
+       // [NotMapped]
+       // public string[] KeyWords {get; set;}
     }
     
 }
