@@ -64,6 +64,10 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "NEST": {
+              "target": "Package",
+              "version": "[6.7.0, )"
             }
           },
           "imports": [
